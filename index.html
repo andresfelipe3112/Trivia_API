@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Trivia</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <form action="" id="trivia">
+      <h2>Trivia</h2>
+      <div class="question-field">
+        <label for="amount">Número de preguntas: </label>
+        <input type="number" id="amount" min="0" class="amount" value="10" />
+      </div>
+
+      <div class="question-field">
+        <label for="category">Categoría: </label>
+        <select name="" id="category">
+          <option value="0">Cualquier categoría</option>
+          <option value="9">Cultura general</option>
+          <option value="10">Libros</option>
+          <option value="11">Películas</option>
+          <option value="12">Música</option>
+          <option value="13">Musicales y teatros</option>
+          <option value="14">Televisión</option>
+          <option value="15">Videojuegos</option>
+          <option value="16">Juegos de mesa</option>
+          <option value="17">Ciencia y naturaleza</option>
+          <option value="18">Computación</option>
+          <option value="19">Matemáticas</option>
+          <option value="20">Mitología</option>
+          <option value="21">Deportes</option>
+          <option value="22">Geografía</option>
+          <option value="23">Historia</option>
+          <option value="24">Política</option>
+          <option value="25">Arte</option>
+          <option value="26">Celebridades</option>
+          <option value="27">Animales</option>
+          <option value="28">Autos</option>
+          <option value="29">Comics</option>
+          <option value="30">Gadgets</option>
+          <option value="31">Ánime y manga</option>
+          <option value="32">Caricaturas</option>
+        </select>
+      </div>
+
+      <div class="question-field">
+        <label for="difficulty">Dificultad: </label>
+        <select name="" id="difficulty">
+          <option value="0">Cualquier dificultad</option>
+          <option value="easy">Fácil</option>
+          <option value="medium">Moderada</option>
+          <option value="hard">Difícil</option>
+        </select>
+      </div>
+
+      <div class="question-field">
+        <label for="type">Tipo de pregunta: </label>
+        <select name="" id="type">
+          <option value="0">Cualquier tipo</option>
+          <option value="multiple">Opción Múltiple</option>
+          <option value="boolean">Verdadero / Falso</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Comenzar" />
+    </form>
+
+    
+    <div id="good">
+      <h3>¡Good!</h3>
+    </div>
+
+    <div id="bad">
+      <h3>¡Bad!</h3>
+    </div>
+
+    <div class="content" id="questionsContent">
+      <p id="questionName"></p>
+      <div class="question-items">
+        <button class="botones" id="1" type="button">Ans 1</button>
+        <button class="botones" id="2" type="button">Ans 2</button>
+        <button class="botones" id="3" type="button">Ans 3</button>
+        <button class="botones" id="4" type="button">Ans 4</button>
+      </div>
+      <p>
+        <span id="question_index"></span> / <span id="num_questions"></span>
+      </p>
+    </div>
+
+    <div class="questionsContentPoints">
+
+      <div id="nextQuestion">
+       
+      </div>
+      
+       <div class="">
+        <h3 id ="Questions"></h3> 
+      </div>
+      <div class="">
+        <h4 id ="goods">Goods</h4>
+      </div>
+      <div class="">
+        <h4 id= "bads">Bads</h4>
+      </div>
+      
+    </div>
+
+    <script src="trivia.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  </body>
+</html>
